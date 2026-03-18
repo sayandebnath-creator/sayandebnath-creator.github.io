@@ -177,11 +177,26 @@ text-decoration:none;
 .btn:hover{background:var(--accent)}
 
 .project-img{
-width:100%;
-border:2px solid #000;
-margin-bottom:1rem;
-object-fit:cover;
-max-height:220px;
+  width:100%;
+  height:auto;
+
+  /* keeps images consistent */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+  border:2px solid #000;
+  margin-bottom:1rem;
+
+  /* visual polish */
+  box-shadow:6px 6px 0 rgba(0,0,0,0.4);
+  transition: transform .3s ease;
+}
+
+/* hover only on devices that support it */
+@media (hover:hover){
+  .project-img:hover{
+    transform: scale(1.03);
+  }
 }
 
 </style>
