@@ -1,1 +1,1 @@
-# It's all about ME!!!
+# It's all about my projects and myself!
